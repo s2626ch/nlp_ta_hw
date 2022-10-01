@@ -1,0 +1,42 @@
+---
+title: "웹 사이트 만들기"
+description: |
+  한 번 만들어 봅시다.
+site: distill::distill_website
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3  
+author:
+  - name: 송치호
+    url: https://s2626ch.github.io/nlp_ta
+    affiliation: 한국국가기록연구원
+    affiliation_url: https://rikar.org 
+date: "`r Sys.Date()`" 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# STT 텍스트 분석
+
+음성 인식(Speech Recognition)이란 사람이 말하는 음성 언어를 컴퓨터가 해석해 그 내용을 문자 데이터로 전환하는 처리를 말합니다. **STT(Speech-to-Text)**라고도 합니다. 
+
+상담센터의 상담 내용을 텍스트화한 STT 데이터를 **자연어 처리(NLP, Natural Language Processing)하여 함축되어 있는 고객의 의도를 이해**합니다.
+
+<br>
+
+```{r network, echo=FALSE, out.width = "55%", fig.align='center'}
+knitr::include_graphics("img/what-is-text-analysis.png")
+```
+
+
+
+<br>
+
+```{r gis, echo=FALSE, out.width = "70%", fig.align='center'}
+knitr::include_graphics("img/complaint_alterImage01.png")
+```
+
